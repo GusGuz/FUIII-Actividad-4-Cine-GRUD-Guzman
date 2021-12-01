@@ -1,5 +1,5 @@
 <?php 
-    include("conexion.php");
+    include("conexion (2).php");
     $con=conectar();
 
     $sql="SELECT * FROM `empleado`";
@@ -23,9 +23,8 @@
                         
                         <div class="col-md-3">
                             <h1>Ingrese datos</h1>
-                                <form action="insertar.php" method="POST">
+                            <form action="insertar (1).php" method="POST">
 
-                                    <input type="text" class="form-control mb-3" name="id" placeholder="ID">
                                     <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre completo">
                                     <input type="text" class="form-control mb-3" name="email" placeholder="Email">
                                     <input type="text" class="form-control mb-3" name="direccion" placeholder="Dirección">
@@ -58,8 +57,8 @@
                                                 <th><?php  echo $row['email']?></th>
                                                 <th><?php  echo $row['direccion']?></th>  
                                                 <th><?php  echo $row['telefono']?></th>
-                                                <th><a href="actualizar.php?id=<?php echo $row['id'] ?>" class="btn btn-info">Editar</a></th>
-                                                <th><a href="delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
+                                                <th><a href="actualizar (2).php?id=<?php echo $row['id'] ?>" class="btn btn-info">Editar</a></th>
+                                                <th><a href="delete (2).php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                                             </tr>
                                         <?php 
                                             }

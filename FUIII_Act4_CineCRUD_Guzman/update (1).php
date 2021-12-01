@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("conexion (2).php");
 $con=conectar();
 
 $id=$_POST['id'];

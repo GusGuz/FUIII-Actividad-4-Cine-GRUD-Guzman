@@ -1,9 +1,8 @@
 <?php 
-    include("conexion.php");
+    include("conexion (2).php");
     $con=conectar();
 
-$id=$_GET['id'];
-
+//d = $_GET['id'];
 $sql="SELECT * FROM empleado WHERE id='$id'";
 $query=mysqli_query($con,$sql);
 
@@ -23,10 +22,8 @@ $row=mysqli_fetch_array($query);
     </head>
     <body>
                 <div class="container mt-5">
-                    <form action="update.php" method="POST">
-                    
+                    <form action="update (1).php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
-                                
                                 <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre" value="<?php echo $row['nombre']  ?>">
                                 <input type="text" class="form-control mb-3" name="email" placeholder="Email" value="<?php echo $row['email']  ?>">
                                 <input type="text" class="form-control mb-3" name="direccion" placeholder="Direccion" value="<?php echo $row['direccion']  ?>">
